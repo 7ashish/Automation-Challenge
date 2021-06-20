@@ -7,7 +7,7 @@
 	<!--  <parameter name="browser" value="firefox" /> -->
 	<!--  <parameter name="browser" value="edge" /> -->
 
-	<parameter name= "dataFile" value = ".\\\\TestData\\\\testdata.xlsx" />
+	<parameter name= "dataFile" value = ".\\\\TestDataFiles\\\\testdata.xlsx" />
 
 	
 	<test name="Default test" verbose="2">
@@ -18,7 +18,7 @@
 		</groups>
 	
 		<classes>
-			<class name="Test.searchTask" />
+			<class name="Selenium.AutomationChallenge.ResultsCount" />
 		</classes>
 		
 	</test>

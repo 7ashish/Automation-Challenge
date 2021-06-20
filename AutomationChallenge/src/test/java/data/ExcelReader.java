@@ -24,7 +24,7 @@ public class ExcelReader {
 		return fileInputStream;
 	}
 	
-	public Object[][] getExcelData(String filepath) throws IOException{
+	public Object[][] extractExcelData(String filepath) throws IOException{
 		fileInputStream = getFileInputStream(filepath);
 		XSSFWorkbook workBook = new XSSFWorkbook(fileInputStream);
 		XSSFSheet sheet1 = workBook.getSheetAt(0);
