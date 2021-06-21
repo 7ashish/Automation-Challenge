@@ -2,28 +2,30 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-<!-- Parameter value can be ("chrome","firefox","ie" or "edge") 
-to run on any browser in case of parameter group -->
+	<!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on 
+		any browser in case of parameter group -->
 	<parameter name="browser" value="chrome" />
 
-<!-- dataFile parameter holds the file pass of the Excel sheet that contains the test data -->
-	<parameter name= "dataFile" value = ".\\\\TestDataFiles\\\\testdata.xlsx" />
+	<!-- dataFile parameter holds the file pass of the Excel sheet that contains 
+		the test data -->
+	<parameter name="dataFile"
+		value=".\\\\TestDataFiles\\\\testdata.xlsx" />
 
-	
+
 	<test name="Default test" verbose="2">
 		<groups>
 			<run>
-			
-			<!-- You can include (["userPrompt"===> for browser User Input] and
-			  ["parameter" ===> for browser parameter in TestNG.xml]) -->
-				<include name = "userPrompt"> </include>
+				<!-- You can include (["userPrompt"===> for browser User Input] and ["parameter" 
+					===> for browser parameter in TestNG.xml]) -->
+				<include name="userPrompt">
+				</include>
 			</run>
 		</groups>
-	
+
 		<classes>
-		<class name="Selenium.AutomationChallenge.ResultsCount" />
+			<class name="Selenium.AutomationChallenge.ResultsCount" />
 		</classes>
-		
+
 	</test>
 	<!-- Default test -->
 </suite>

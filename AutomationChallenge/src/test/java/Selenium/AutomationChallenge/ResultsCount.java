@@ -103,13 +103,13 @@ public class ResultsCount {
 
 		driver.findElement(By.cssSelector(page2Locator)).click();
 		List<WebElement> page2Results = driver.findElements(By.xpath(resultsLocator));
-		System.out.println("Page 2 Results: " + page2Results.size());
+		System.out.println("Test "+TestCounter+" Page 2 Results: " + page2Results.size());
 
 		js.executeScript(scrollingMethod);
 
 		driver.findElement(By.cssSelector(page3Locator)).click();
 		List<WebElement> page3Results = driver.findElements(By.xpath(resultsLocator));
-		System.out.println("Page 3 Results: " + page3Results.size());
+		System.out.println("Test "+ TestCounter++ +" Page 3 Results: " + page3Results.size());
 
 		int pageTwo = page2Results.size();
 		int pageThree = page3Results.size();
@@ -131,7 +131,7 @@ public class ResultsCount {
 	@AfterMethod(groups = { "parameter", "userPrompt" })
 	public void TakeScreenshotOnFailure(ITestResult result) throws IOException {
 		TakeScreenShotOnTestFailure takeScreenshot = new TakeScreenShotOnTestFailure();
-		takeScreenshot.takeScreenShot(result, driver, TestCounter);
+		takeScreenshot.takeScreenShot(result, driver, TestCounter-1);
 	}
 
 	/**

@@ -23,7 +23,6 @@ public class TakeScreenShotOnTestFailure {
 	 */
 	public void takeScreenShot(ITestResult result, WebDriver driver, int TestsCounter) throws IOException {
 		if (ITestResult.FAILURE == result.getStatus()) {
-			System.out.println("Testssss");
 			// Taking Screenshots for Failures
 			TakesScreenshot takescreenshot = (TakesScreenshot) driver;
 			File source = takescreenshot.getScreenshotAs(OutputType.FILE);

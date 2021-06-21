@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-21T10:48:12 EET" name="Suite" finished-at="2021-06-21T10:48:25 EET" duration-ms="13016">
+  <suite started-at="2021-06-21T11:39:20 EET" name="Suite" finished-at="2021-06-21T11:39:52 EET" duration-ms="31821">
     <groups>
       <group name="userPrompt">
         <method signature="ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" name="resultsCount" class="Selenium.AutomationChallenge.ResultsCount"/>
@@ -11,9 +11,9 @@
         <method signature="ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" name="resultsCount" class="Selenium.AutomationChallenge.ResultsCount"/>
       </group> <!-- parameter -->
     </groups>
-    <test started-at="2021-06-21T10:48:12 EET" name="Default test" finished-at="2021-06-21T10:48:25 EET" duration-ms="13016">
+    <test started-at="2021-06-21T11:39:20 EET" name="Default test" finished-at="2021-06-21T11:39:52 EET" duration-ms="31821">
       <class name="Selenium.AutomationChallenge.ResultsCount">
-        <test-method is-config="true" signature="assignDataPath(java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:12 EET" name="assignDataPath" finished-at="2021-06-21T10:48:12 EET" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="assignDataPath(java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:20 EET" name="assignDataPath" finished-at="2021-06-21T11:39:20 EET" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignDataPath -->
-        <test-method is-config="true" signature="openBrowserByUserInput()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:12 EET" name="openBrowserByUserInput" finished-at="2021-06-21T10:48:18 EET" duration-ms="5894" status="PASS">
+        <test-method is-config="true" signature="openBrowserByUserInput()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:20 EET" name="openBrowserByUserInput" finished-at="2021-06-21T11:39:29 EET" duration-ms="8308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserByUserInput -->
-        <test-method signature="resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:18 EET" name="resultsCount" data-provider="test_Data" finished-at="2021-06-21T10:48:25 EET" duration-ms="6263" status="FAIL">
+        <test-method signature="resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:30 EET" name="resultsCount" data-provider="test_Data" finished-at="2021-06-21T11:39:36 EET" duration-ms="6887" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,12 +66,157 @@
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultsCount -->
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:36 EET" name="TakeScreenshotOnFailure" finished-at="2021-06-21T11:39:36 EET" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resultsCount status=SUCCESS method=ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method signature="resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:36 EET" name="resultsCount" data-provider="test_Data" finished-at="2021-06-21T11:39:40 EET" duration-ms="3995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amazon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[aria-label='Page 2']]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[[aria-label='Page 3']]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[window.scrollBy(0,1000)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[//h3[@class='LC20lb DKV0Md']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultsCount -->
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:40 EET" name="TakeScreenshotOnFailure" finished-at="2021-06-21T11:39:40 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resultsCount status=SUCCESS method=ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method signature="resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:40 EET" name="resultsCount" data-provider="test_Data" finished-at="2021-06-21T11:39:45 EET" duration-ms="4160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Souq]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[aria-label='Page 2']]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[[aria-label='Page 3']]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[window.scrollBy(0,1000)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[//h3[@class='LC20lb DKV0Md']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultsCount -->
+        <test-method signature="resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:45 EET" name="resultsCount" data-provider="test_Data" finished-at="2021-06-21T11:39:48 EET" duration-ms="3657" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Booking]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[aria-label='Page 2']]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[[aria-label='Page 3']]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[window.scrollBy(0,1000)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[//h3[@class='LC20lb DKV0Md']]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [9] but found [10]]]>
+              <![CDATA[expected [10] but found [9]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [9] but found [10]
+              <![CDATA[java.lang.AssertionError: expected [10] but found [9]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -113,7 +258,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resultsCount -->
-        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:25 EET" name="TakeScreenshotOnFailure" finished-at="2021-06-21T10:48:25 EET" duration-ms="133" status="PASS">
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:45 EET" name="TakeScreenshotOnFailure" finished-at="2021-06-21T11:39:45 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resultsCount status=SUCCESS method=ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:48 EET" name="TakeScreenshotOnFailure" finished-at="2021-06-21T11:39:49 EET" duration-ms="340" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +280,59 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TakeScreenshotOnFailure -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:25 EET" name="closeBrowser" finished-at="2021-06-21T10:48:25 EET" duration-ms="29" status="PASS">
+        <test-method signature="resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:49 EET" name="resultsCount" data-provider="test_Data" finished-at="2021-06-21T11:39:52 EET" duration-ms="3271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TripAdvisor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[q]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[aria-label='Page 2']]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[[aria-label='Page 3']]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[window.scrollBy(0,1000)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[//h3[@class='LC20lb DKV0Md']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resultsCount -->
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:52 EET" name="TakeScreenshotOnFailure" finished-at="2021-06-21T11:39:52 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resultsCount status=SUCCESS method=ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T11:39:52 EET" name="closeBrowser" finished-at="2021-06-21T11:39:52 EET" duration-ms="176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
