@@ -28,8 +28,7 @@ It also containing
 
 * If you want to test your test data Excel File you just need to add the file location in the Configuration file called TestNG.xml in the parameter called : dataFile and set it's value to the file location you want to use for testing.
 ```
-	<!-- dataFile parameter holds the file pass of the Excel sheet that contains 
-		the test data -->
+	<!-- dataFile parameter holds the file pass of the Excel sheet that contains the test data -->
 	<parameter name="dataFile" value=".\\\\TestDataFiles\\\\testdata.xlsx" />
 ```
 
@@ -49,8 +48,7 @@ It also containing
 * Run the TestNG.xml as a TestNG Suite after modifying it's parameters if required.
 * You are able to either choose the browser to run in the run time by enter the name of the browser as a user input, or setting the browser parameter to the name of the browser.
 ```
-<!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on 
-		any browser in case of parameter group -->
+<!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on any browser in case of parameter group -->
 	<parameter name="browser" value="chrome" />
 ```
 
@@ -58,8 +56,7 @@ It also containing
 ```
 		<groups>
 			<run>
-				<!-- You can include (["userPrompt"===> for browser User Input] and ["parameter" 
-					===> for browser parameter in TestNG.xml]) -->
+				<!-- You can include (["userPrompt" for browser User Input] and ["parameter" for browser parameter in TestNG.xml]) -->
 				<include name="userPrompt">
 				</include>
 			</run>
