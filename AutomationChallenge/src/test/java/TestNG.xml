@@ -21,7 +21,7 @@ to run on any browser in case of parameter group -->
 		</groups>
 	
 		<classes>
-			<class name="Selenium.AutomationChallenge.ResultsCount" />
+		<class name="Selenium.AutomationChallenge.ResultsCount" />
 		</classes>
 		
 	</test>

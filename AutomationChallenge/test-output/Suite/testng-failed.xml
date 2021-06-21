@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="dataFile" value=".\\\\TestDataFiles\\\\testdata.xlsx"/>
+  <test thread-count="5" name="Default test(failed)">
+    <groups>
+      <run>
+        <include name="userPrompt"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Selenium.AutomationChallenge.ResultsCount">
+        <methods>
+          <include name="openBrowserByUserInput"/>
+          <include name="resultsCount" invocation-numbers="0"/>
+          <include name="assignDataPath"/>
+          <include name="TakeScreenshotOnFailure"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Selenium.AutomationChallenge.ResultsCount -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-21T02:43:19 EET" name="Suite" finished-at="2021-06-21T02:43:37 EET" duration-ms="17503">
+  <suite started-at="2021-06-21T10:48:12 EET" name="Suite" finished-at="2021-06-21T10:48:25 EET" duration-ms="13016">
     <groups>
       <group name="userPrompt">
-        <method signature="ResultsCount.searchGoogle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" name="searchGoogle" class="Selenium.AutomationChallenge.ResultsCount"/>
+        <method signature="ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" name="resultsCount" class="Selenium.AutomationChallenge.ResultsCount"/>
       </group> <!-- userPrompt -->
       <group name="parameter">
-        <method signature="ResultsCount.searchGoogle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" name="searchGoogle" class="Selenium.AutomationChallenge.ResultsCount"/>
+        <method signature="ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" name="resultsCount" class="Selenium.AutomationChallenge.ResultsCount"/>
       </group> <!-- parameter -->
     </groups>
-    <test started-at="2021-06-21T02:43:19 EET" name="Default test" finished-at="2021-06-21T02:43:37 EET" duration-ms="17503">
+    <test started-at="2021-06-21T10:48:12 EET" name="Default test" finished-at="2021-06-21T10:48:25 EET" duration-ms="13016">
       <class name="Selenium.AutomationChallenge.ResultsCount">
-        <test-method is-config="true" signature="assignDataPath(java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:19 EET" name="assignDataPath" finished-at="2021-06-21T02:43:19 EET" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="assignDataPath(java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:12 EET" name="assignDataPath" finished-at="2021-06-21T10:48:12 EET" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignDataPath -->
-        <test-method is-config="true" signature="openBrowserUser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:19 EET" name="openBrowserUser" finished-at="2021-06-21T02:43:29 EET" duration-ms="9595" status="PASS">
+        <test-method is-config="true" signature="openBrowserByUserInput()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:12 EET" name="openBrowserByUserInput" finished-at="2021-06-21T10:48:18 EET" duration-ms="5894" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowserUser -->
-        <test-method signature="searchGoogle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:29 EET" name="searchGoogle" data-provider="test_Data" finished-at="2021-06-21T02:43:35 EET" duration-ms="6002" status="PASS">
+        </test-method> <!-- openBrowserByUserInput -->
+        <test-method signature="resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:18 EET" name="resultsCount" data-provider="test_Data" finished-at="2021-06-21T10:48:25 EET" duration-ms="6263" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,10 +66,65 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [9] but found [10]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [9] but found [10]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at Selenium.AutomationChallenge.ResultsCount.resultsCount(ResultsCount.java:116)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchGoogle -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:35 EET" name="closeBrowser" finished-at="2021-06-21T02:43:37 EET" duration-ms="1117" status="PASS">
+        </test-method> <!-- resultsCount -->
+        <test-method is-config="true" signature="TakeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:25 EET" name="TakeScreenshotOnFailure" finished-at="2021-06-21T10:48:25 EET" duration-ms="133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=resultsCount status=FAILURE method=ResultsCount.resultsCount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshotOnFailure -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@5c5eefef]" started-at="2021-06-21T10:48:25 EET" name="closeBrowser" finished-at="2021-06-21T10:48:25 EET" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
