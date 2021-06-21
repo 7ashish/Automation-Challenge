@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-20T20:26:14 EET" name="Suite" finished-at="2021-06-20T20:26:26 EET" duration-ms="11587">
+  <suite started-at="2021-06-21T02:43:19 EET" name="Suite" finished-at="2021-06-21T02:43:37 EET" duration-ms="17503">
     <groups>
       <group name="userPrompt">
         <method signature="ResultsCount.searchGoogle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" name="searchGoogle" class="Selenium.AutomationChallenge.ResultsCount"/>
@@ -11,9 +11,9 @@
         <method signature="ResultsCount.searchGoogle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" name="searchGoogle" class="Selenium.AutomationChallenge.ResultsCount"/>
       </group> <!-- parameter -->
     </groups>
-    <test started-at="2021-06-20T20:26:14 EET" name="Default test" finished-at="2021-06-20T20:26:26 EET" duration-ms="11587">
+    <test started-at="2021-06-21T02:43:19 EET" name="Default test" finished-at="2021-06-21T02:43:37 EET" duration-ms="17503">
       <class name="Selenium.AutomationChallenge.ResultsCount">
-        <test-method is-config="true" signature="assignDataPath(java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-20T20:26:14 EET" name="assignDataPath" finished-at="2021-06-20T20:26:14 EET" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="assignDataPath(java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:19 EET" name="assignDataPath" finished-at="2021-06-21T02:43:19 EET" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignDataPath -->
-        <test-method is-config="true" signature="openBrowserUser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-20T20:26:14 EET" name="openBrowserUser" finished-at="2021-06-20T20:26:18 EET" duration-ms="4141" status="PASS">
+        <test-method is-config="true" signature="openBrowserUser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:19 EET" name="openBrowserUser" finished-at="2021-06-21T02:43:29 EET" duration-ms="9595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowserUser -->
-        <test-method signature="searchGoogle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-20T20:26:19 EET" name="searchGoogle" data-provider="test_Data" finished-at="2021-06-20T20:26:26 EET" duration-ms="6645" status="PASS">
+        <test-method signature="searchGoogle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:29 EET" name="searchGoogle" data-provider="test_Data" finished-at="2021-06-21T02:43:35 EET" duration-ms="6002" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchGoogle -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-20T20:26:26 EET" name="closeBrowser" finished-at="2021-06-20T20:26:26 EET" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Selenium.AutomationChallenge.ResultsCount@595b007d]" started-at="2021-06-21T02:43:35 EET" name="closeBrowser" finished-at="2021-06-21T02:43:37 EET" duration-ms="1117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

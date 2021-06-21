@@ -12,6 +12,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelReader {
 	static FileInputStream fileInputStream = null; 
 
+	/**
+	* Asserts That page 2 and page 3 have equal results count, in any URL. 
+	* @param  filepath  the test data file path.
+	*/
 	public FileInputStream getFileInputStream(String filepath) {
 		
 		File srcFile = new File(filepath);
@@ -24,6 +28,10 @@ public class ExcelReader {
 		return fileInputStream;
 	}
 	
+	/**
+	* Asserts That page 2 and page 3 have equal results count, in any URL. 
+	* @param  filepath  the test data file path.
+	*/
 	public Object[][] extractExcelData(String filepath) throws IOException{
 		fileInputStream = getFileInputStream(filepath);
 		XSSFWorkbook workBook = new XSSFWorkbook(fileInputStream);
