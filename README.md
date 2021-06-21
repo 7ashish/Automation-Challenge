@@ -14,10 +14,14 @@ It also containing
 * The Maven Project contains all the requird dependancies and it could be run on any device.
 * You just need to check your 4 browsers version if it supports the web drivers used in this project.
 * In order to get the different drivers version use this link for
-* Chrome : https://chromedriver.chromium.org/downloads
-* FireFox : https://github.com/mozilla/geckodriver/releases
-* Edge : https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
-* Internet Explorer : https://selenium-release.storage.googleapis.com/index.html
+* Chrome : 
+*                 https://chromedriver.chromium.org/downloads
+* FireFox : 
+*                 https://github.com/mozilla/geckodriver/releases
+* Edge : 
+*                 https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+* Internet Explorer : 
+*                 https://selenium-release.storage.googleapis.com/index.html
 
 * After downloading your WebDriver don't forget to overwrite the old webdriver in a folder called WebDrivers.
 
