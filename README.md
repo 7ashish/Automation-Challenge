@@ -35,10 +35,8 @@ It also containing
 * @param searchBarLocator Locator for the search bar.
 * @param page2Locator     Results Page 2 Locator
 * @param page3Locator     Results Page 3 Locator
-* @param scrollingMethod  Method used to identify how many pixels should be
-*                         scrolled in which direction.
-* @param resultsLocator   results Locator for counting purpose neglecting any
-*                         maps, videos, or images.
+* @param scrollingMethod  Method used to identify how many pixels should be scrolled in which direction.
+* @param resultsLocator   results Locator for counting purpose neglecting any maps, videos, or images.
 
 
 ### Executing program
