@@ -75,5 +75,7 @@ It also containing
 ![image](https://user-images.githubusercontent.com/33814335/122742469-43361300-d286-11eb-9302-bb51b20e285b.png)
 ![image](https://user-images.githubusercontent.com/33814335/122742535-55b04c80-d286-11eb-8115-0f48270f33d7.png)
 
+* The Generated TestNG report of this Test Case is in the test-output folder which is automatically generated when testing the TestNG.xml
+![image](https://user-images.githubusercontent.com/33814335/122743200-15050300-d287-11eb-977a-899664d523ca.png)
 
 
