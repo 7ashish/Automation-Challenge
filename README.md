@@ -67,15 +67,19 @@ It also containing
 ```
 ### Test Case
 
-* After running the testdata in the Excel Sheet using Edge Browser
+#### After running the testdata in the Excel Sheet using Edge Browser
+
 ![image](https://user-images.githubusercontent.com/33814335/122742129-f0f4f200-d285-11eb-82fa-33509ef603e1.png)
 ![image](https://user-images.githubusercontent.com/33814335/122742042-dde22200-d285-11eb-9442-1864b8fe6468.png)
 ![image](https://user-images.githubusercontent.com/33814335/122742345-226dbd80-d286-11eb-8432-6c71a94a6625.png)
-* Screenshot is taken on the Failed test using the Helper Class [TakeScreenShotOnTestFailure]
+
+#### Screenshot is taken on the Failed test using the Helper Class [TakeScreenShotOnTestFailure]
+
 ![image](https://user-images.githubusercontent.com/33814335/122742469-43361300-d286-11eb-9302-bb51b20e285b.png)
 ![image](https://user-images.githubusercontent.com/33814335/122742535-55b04c80-d286-11eb-8115-0f48270f33d7.png)
 
-* The Generated TestNG report of this Test Case is in the test-output folder which is automatically generated when testing the TestNG.xml
+#### The Generated TestNG report of this Test Case is in the test-output folder which is automatically generated when testing the TestNG.xml
+
 ![image](https://user-images.githubusercontent.com/33814335/122743200-15050300-d287-11eb-977a-899664d523ca.png)
 
 
