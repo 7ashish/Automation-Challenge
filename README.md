@@ -27,14 +27,14 @@ This Automation Framework is a Maven Project, Supporting 4 browsers [###Chrome, 
 
 
 * If you want to test your test data Excel File you just need to add the file location in the Configuration file called TestNG.xml in the parameter called : dataFile and set it's value to the file location you want to use for testing.
-```
+```diff
 #	<!-- dataFile parameter holds the file pass of the Excel sheet that contains the test data -->
 +	<parameter name="dataFile" value=".\\\\TestDataFiles\\\\testdata1.xlsx" />
 ```
 
 * Take care of the parameters order used plus my Excel Reader neglect the headers [Headers are required but neglected]
 * The Parameters should be set as follows :
-```
+```diff
 ! @param URL              an absolute URL.
 ! @param searchText       Text that is used to search for results.
 ! @param searchBarLocator Locator for the search bar.
@@ -56,7 +56,7 @@ This Automation Framework is a Maven Project, Supporting 4 browsers [###Chrome, 
 * Import the project and go to TestNG.xml file in src/test/java folder, right click inside the file, choose [Run As ---> TestNG Suite].
 * You have 2 options for running this Test eiher by User Input [Run Time] or by parameter.
 * So Don't Forget to decide which way you want to run that test, you can do that by setting the group name into either ["userPrompt" or "parameter"] in the TestNG.xml file.
-```
+```diff
 +		<groups>
 +			<run>
 #				<!-- You can include (["userPrompt" for browser User Input] and ["parameter" for browser parameter in TestNG.xml]) -->
