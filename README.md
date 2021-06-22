@@ -3,7 +3,7 @@ Automation Challenge using Selenium WebDriver.
 
 ## Description
 
-This Automation Framework is a Maven Project, Supporting 4 browsers [###Chrome, ###FireFox, ###Internet Explorer, ###Edge], and currently containing 1 test used to test browser Results on different pages, in my case I am testing the second and third page results count if they are the same, ignoring any maps, videos, or images. 
+This Automation Framework is a Maven Project, Supporting 4 browsers [Chrome, FireFox, Internet Explorer, Edge], and currently containing 1 test used to test browser Results on different pages, in my case I am testing the second and third page results count if they are the same, ignoring any maps, videos, or images. 
 
 ## Getting Started
 
