@@ -28,21 +28,26 @@ This Automation Framework is a Maven Project, Supporting 4 browsers [###Chrome, 
 
 * If you want to test your test data Excel File you just need to add the file location in the Configuration file called TestNG.xml in the parameter called : dataFile and set it's value to the file location you want to use for testing.
 ```
-	<!-- dataFile parameter holds the file pass of the Excel sheet that contains the test data -->
-	<parameter name="dataFile" value=".\\\\TestDataFiles\\\\testdata.xlsx" />
+#	<!-- dataFile parameter holds the file pass of the Excel sheet that contains the test data -->
++	<parameter name="dataFile" value=".\\\\TestDataFiles\\\\testdata1.xlsx" />
 ```
 
 * Take care of the parameters order used plus my Excel Reader neglect the headers [Headers are required but neglected]
 * The Parameters should be set as follows :
-* @param URL              an absolute URL.
-* @param searchText       Text that is used to search for results.
-* @param searchBarLocator Locator for the search bar.
-* @param page2Locator     Results Page 2 Locator
-* @param page3Locator     Results Page 3 Locator
-* @param scrollingMethod  Method used to identify how many pixels should be scrolled in which direction.
-* @param resultsLocator   results Locator for counting purpose neglecting any maps, videos, or images.
+```
+! @param URL              an absolute URL.
+! @param searchText       Text that is used to search for results.
+! @param searchBarLocator Locator for the search bar.
+! @param page2Locator     Results Page 2 Locator
+! @param page3Locator     Results Page 3 Locator
+! @param scrollingMethod  Method used to identify how many pixels should be scrolled in which direction.
+! @param resultsLocator   results Locator for counting purpose neglecting any maps, videos, or images.
+```
 
-![image](https://user-images.githubusercontent.com/33814335/122742129-f0f4f200-d285-11eb-82fa-33509ef603e1.png)
+### The Excel File shows how the parameters are passed through testdata files:
+
+![image](https://user-images.githubusercontent.com/33814335/122887765-81dcd380-d341-11eb-8223-5e4cc8d9535e.png)
+
 
 ---
 
@@ -52,13 +57,13 @@ This Automation Framework is a Maven Project, Supporting 4 browsers [###Chrome, 
 * You have 2 options for running this Test eiher by User Input [Run Time] or by parameter.
 * So Don't Forget to decide which way you want to run that test, you can do that by setting the group name into either ["userPrompt" or "parameter"] in the TestNG.xml file.
 ```
-		<groups>
-			<run>
-				<!-- You can include (["userPrompt" for browser User Input] and ["parameter" for browser parameter in TestNG.xml]) -->
-				<include name="userPrompt">
-				</include>
-			</run>
-		</groups>
++		<groups>
++			<run>
+#				<!-- You can include (["userPrompt" for browser User Input] and ["parameter" for browser parameter in TestNG.xml]) -->
++				<include name="userPrompt">
++				</include>
++			</run>
++		</groups>
 ```
 
 * [1st Option] You are able to either choose the browser in the run time by entering the name of the browser as a user input in the console if the group name is set to userPrompt.
@@ -67,7 +72,7 @@ This Automation Framework is a Maven Project, Supporting 4 browsers [###Chrome, 
 ### This is for the 2nd Option: 
 * You can find this code inside the TestNG.xml
 ```diff
-- <!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on any browser in case of parameter group -->
+# <!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on any browser in case of parameter group -->
 +	<parameter name="browser" value="chrome" />
 ```
 ---
