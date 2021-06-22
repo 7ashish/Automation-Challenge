@@ -13,7 +13,7 @@
       <class name="Selenium.AutomationChallenge.ResultsCount">
         <methods>
           <include name="openBrowserByUserInput"/>
-          <include name="resultsCount" invocation-numbers="3"/>
+          <include name="resultsCount" invocation-numbers="0"/>
           <include name="assignDataPath"/>
           <include name="TakeScreenshotOnFailure"/>
           <include name="closeBrowser"/>
