@@ -103,13 +103,13 @@ public class ResultsCount {
 
 		driver.findElement(By.cssSelector(page2Locator)).click();
 		List<WebElement> page2Results = driver.findElements(By.xpath(resultsLocator));
-		System.out.println("Test "+TestCounter+" Page 2 Results: " + page2Results.size());
+		System.out.println("Test "+TestCounter +" ["+ searchText +"]"+" Page 2 Results: " + page2Results.size());
 
 		js.executeScript(scrollingMethod);
 
 		driver.findElement(By.cssSelector(page3Locator)).click();
 		List<WebElement> page3Results = driver.findElements(By.xpath(resultsLocator));
-		System.out.println("Test "+ TestCounter++ +" Page 3 Results: " + page3Results.size());
+		System.out.println("Test "+ TestCounter++ +" ["+ searchText +"]"+" Page 3 Results: " + page3Results.size());
 
 		int pageTwo = page2Results.size();
 		int pageThree = page3Results.size();

@@ -4,20 +4,19 @@
 
 	<!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on 
 		any browser in case of parameter group -->
-	<parameter name="browser" value="chrome" />
+	<parameter name="browser" value="edge" />
 
 	<!-- dataFile parameter holds the file pass of the Excel sheet that contains 
 		the test data -->
 	<parameter name="dataFile"
-		value=".\\\\TestDataFiles\\\\testdata.xlsx" />
-
+		value=".\\\\TestDataFiles\\\\testData1.xlsx" />
 
 	<test name="Default test" verbose="2">
 		<groups>
 			<run>
 				<!-- You can include (["userPrompt"===> for browser User Input] and ["parameter" 
 					===> for browser parameter in TestNG.xml]) -->
-				<include name="userPrompt">
+				<include name="parameter">
 				</include>
 			</run>
 		</groups>
