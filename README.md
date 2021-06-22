@@ -126,4 +126,11 @@ This Automation Framework is a Maven Project, Supporting 4 browsers [Chrome, Fir
 
 ![image](https://user-images.githubusercontent.com/33814335/122887024-c3b94a00-d340-11eb-8bc0-19fa04b47f57.png)
 
+---
+
+## Failure Recovery
+
+* It is handled that when the User types an invalid browser name in User Input [Run Time] or parameter [Configuration file] so that the test runs automatically on the default browser which is Google Chrome.
+
+![image](https://user-images.githubusercontent.com/33814335/122898166-f36d4f80-d34a-11eb-9e60-91bf9961bc19.png)
 
