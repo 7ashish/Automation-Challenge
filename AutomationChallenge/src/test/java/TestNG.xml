@@ -4,7 +4,7 @@
 
 	<!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on 
 		any browser in case of parameter group -->
-	<parameter name="browser" value="edge" />
+	<parameter name="browser" value="chrome" />
 
 	<!-- dataFile parameter holds the file pass of the Excel sheet that contains 
 		the test data -->
@@ -16,7 +16,7 @@
 			<run>
 				<!-- You can include (["userPrompt"===> for browser User Input] and ["parameter" 
 					===> for browser parameter in TestNG.xml]) -->
-				<include name="parameter">
+				<include name="userPrompt">
 				</include>
 			</run>
 		</groups>

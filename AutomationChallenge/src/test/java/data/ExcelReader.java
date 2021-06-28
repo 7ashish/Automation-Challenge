@@ -13,7 +13,8 @@ public class ExcelReader {
 	static FileInputStream fileInputStream = null; 
 
 	/**
-	* Asserts That page 2 and page 3 have equal results count, in any URL. 
+	 * Returns the FileInputStream of the file
+	* Create the FileInputStream [Bytes] for our test data file.
 	* @param  filepath  the test data file path.
 	*/
 	public FileInputStream getFileInputStream(String filepath) {
@@ -29,7 +30,8 @@ public class ExcelReader {
 	}
 	
 	/**
-	* Asserts That page 2 and page 3 have equal results count, in any URL. 
+	 * Returns Object[][] containing the rows and columns of the Excel sheet ignoring the first row [Headers]
+	* Extracts the data from the Excel FileInputStream 
 	* @param  filepath  the test data file path.
 	*/
 	public Object[][] extractExcelData(String filepath) throws IOException{
@@ -41,8 +43,8 @@ public class ExcelReader {
 		String[][] arrayExcelData = new String[TotalNumberOfRows][TotalNumberOfColumns];
 		//Starting Rows from 1 to neglect the headers
 		for (int i = 1; i <= TotalNumberOfRows; i++) {
+			XSSFRow row = sheet1.getRow(i);
 			for (int j = 0; j < TotalNumberOfColumns; j++) {
-				XSSFRow row = sheet1.getRow(i);
 				arrayExcelData[i-1][j] = row.getCell(j).toString();
 			}
 		}

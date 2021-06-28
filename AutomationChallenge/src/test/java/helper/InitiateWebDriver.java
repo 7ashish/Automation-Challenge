@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.BeforeSuite;
 
 public class InitiateWebDriver {
 
@@ -36,17 +37,18 @@ public class InitiateWebDriver {
 	 * @param driverBrowser String containing the browser name to initiate it's
 	 *                      WebDriver.
 	 */
+	@BeforeSuite
 	public WebDriver setWebDriver(String driverBrowser) {
-		if (driverBrowser.equals("chrome")) {
+		if (driverBrowser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", _chromeDriverPath);
 			return new ChromeDriver();
-		} else if (driverBrowser.equals("firefox")) {
+		} else if (driverBrowser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", _firefoxDriverPath);
 			return new FirefoxDriver();
-		} else if (driverBrowser.equals("ie")) {
+		} else if (driverBrowser.equalsIgnoreCase("ie")) {
 			System.setProperty("webdriver.ie.driver", _ieDriverPath);
 			return new InternetExplorerDriver();
-		} else if (driverBrowser.equals("edge")) {
+		} else if (driverBrowser.equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver", _edgeDriverPath);
 			return new EdgeDriver();
 		} else {
