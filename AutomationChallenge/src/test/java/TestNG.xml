@@ -4,12 +4,12 @@
 
 	<!-- Parameter value can be ("chrome","firefox","ie" or "edge") to run on 
 		any browser in case of parameter group -->
-	<parameter name="browser" value="chrome" />
+	<parameter name="browser" value="firefox" />
 
 	<!-- dataFile parameter holds the file pass of the Excel sheet that contains 
 		the test data -->
 	<parameter name="dataFile"
-		value=".\\\\TestDataFiles\\\\testData1.xlsx" />
+		value=".\\\\TestDataFiles\\\\testData2.xlsx" />
 
 	<test name="Default test" verbose="2">
 		<groups>
